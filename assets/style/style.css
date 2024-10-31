@@ -101,7 +101,7 @@ section {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url("../images/bg.png");
+  /* background: url("../images/bg.png"); */
   background-size: cover;
   background-position: center;
   display: grid;
@@ -150,26 +150,181 @@ section {
   color: var(--text-color);
   font-size: var(--regular-font);
   font-weight: 500;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
   margin-right: 1.2rem;
 }
 
-.btn:hover{
-    transform: scale(1.1);
+.btn:hover {
+  transform: scale(1.1);
 }
 
-.price{
-    display: flex;
-    align-items: center;
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: var(--text-color);
+.price {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 .price span {
-    font-size: var(--regular-font);
-    font-weight: 400;
-    color: var(--main-color);
-    margin-left: 0.65rem;
+  font-size: var(--regular-font);
+  font-weight: 400;
+  color: var(--main-color);
+  margin-left: 0.65rem;
 }
 /* **** END SECTION STYLE **** */
+
+/* **** START ICONS STYLE **** */
+.icons {
+  position: absolute;
+  top: 50%;
+  padding: 0 7%;
+  transform: translateY(-50%);
+}
+
+.icons i {
+  display: block;
+  margin: 2rem 0;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition: all 0.6s;
+}
+
+.icons i:hover {
+  transform: translateY(-5px);
+  color: var(--main-color);
+}
+
+.scroll {
+  position: absolute;
+  top: 92%;
+  right: 7%;
+  transform: translateY(-50%);
+}
+
+.scroll a {
+  font-size: var(--regular-font);
+  color: var(--text-color);
+  transition: all 0.6s;
+}
+
+.scroll a:hover {
+  color: var(--main-color);
+}
+
+.scroll i {
+  font-size: 1.5rem;
+  margin-right: 6px;
+}
+/* **** END ICONS STYLE **** */
+
+@media screen and (max-width: 1770px) {
+  header {
+    padding: 22px 4%;
+  }
+  .icons {
+    padding: 0 4%;
+  }
+  .scroll {
+    right: 4%;
+  }
+}
+
+@media screen and (max-width: 1670px) {
+  :root {
+    --big-font: 3.7rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  :root {
+    --big-font: 3.5rem;
+  }
+  #menu-icon {
+    display: block;
+  }
+  .navlist {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(2rem);
+    transition: all 0.6s ease-in-out;
+  }
+  .navlist a {
+    display: block;
+    padding: 0;
+    margin: 0 0 25px 0;
+    font-size: 1.7rem;
+  }
+  .navlist.open {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .scroll {
+    display: none;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .hero_text {
+    padding-top: 10rem;
+  }
+  .hero_img {
+    width: 30rem;
+    height: 30rem;
+    margin: 0 auto;
+  }
+  .hero_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .icons {
+    display: none;
+  }
+  section {
+    padding: 0 4%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  :root {
+    --big-font: 3.5rem;
+  }
+  .price {
+    font-size: 1.3rem;
+  }
+  .btn {
+    padding: 10px 23px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .hero {
+    height: 100vh;
+  }
+  .hero_img {
+    width: 25rem;
+    height: 25rem;
+    margin: 0 auto;
+  }
+  :root {
+    --big-font: 3rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+}
