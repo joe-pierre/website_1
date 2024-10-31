@@ -173,3 +173,47 @@ section {
     margin-left: 0.65rem;
 }
 /* **** END SECTION STYLE **** */
+
+/* **** START ICONS STYLE **** */
+.icons {
+  position: absolute;
+  top: 50%;
+  padding: 0 7%;
+  transform: translateY(-50%);
+}
+
+.icons i {
+  display: block;
+  margin: 2rem 0;
+  color: var(--text-color);
+  font-size: 1.5rem;
+  transition:  all .6s;
+}
+
+.icons i:hover {
+  transform: translateY(-5px);
+  color: var(--main-color);
+}
+
+.scroll {
+  position: absolute;
+  top: 92%;
+  right: 7%;
+  transform: translateY(-50%);
+}
+
+.scroll a{
+  font-size: var(--regular-font);
+  color: var(--text-color);
+  transition: all .6s;
+}
+
+.scroll a:hover{
+  color: var(--main-color);
+}
+
+.scroll i {
+  font-size: 1.5rem;
+  margin-right: 6px;
+}
+/* **** END ICONS STYLE **** */
