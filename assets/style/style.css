@@ -327,4 +327,9 @@ section {
 }
 
 @media screen and (max-width: 470px) {
+  .hero_img {
+    width: 18rem;
+    height: 18rem;
+    margin: 0 auto;
+  }
 }
